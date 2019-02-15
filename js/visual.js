@@ -9,7 +9,7 @@ function createLineConnectionFromOrigin(b, parent) {
     entityEl.setAttribute('line', {
         start: a_posString,
         end: b_posString,
-        color: '#FFFFFF',
+        color: '#FF0000',
         opacity: 0.5
     })
 
@@ -36,8 +36,8 @@ function addCircleFill(pos, rot, parent) {
         z: pos.z
     });
 
-    entityEl.setAttribute('color', '#FFFFFF')
-    entityEl.setAttribute('opacity', "0.25")
+    entityEl.setAttribute('color', '#FF0000')
+    entityEl.setAttribute('opacity', "0.1")
     entityEl.setAttribute('radius', "0.025")
 
     let parentEl = document.querySelector(parent)
@@ -63,7 +63,7 @@ function addCircle(pos, rot, parent) {
         z: pos.z
     });
 
-    entityEl.setAttribute('color', '#FFFFFF')
+    entityEl.setAttribute('color', '#FF0000')
     entityEl.setAttribute('radius-inner', "0.025")
     entityEl.setAttribute("radius-outer", "0.026")
     

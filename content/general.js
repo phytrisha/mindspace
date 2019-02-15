@@ -2,7 +2,7 @@ let other_scenarios = [
   {
     id: "",
     text: "Max Tegmarks Scenarios",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,
@@ -14,7 +14,7 @@ let other_scenarios = [
   {
     id: "",
     text: "Nick Bostroms Scenarios",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,
@@ -30,7 +30,7 @@ let our_scenarios = [
   {
     id: "",
     text: "Scenario 1",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,
@@ -42,7 +42,7 @@ let our_scenarios = [
   {
     id: "",
     text: "Scenario 2",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,
@@ -57,7 +57,7 @@ let mainNodes = [
   {
     id: "",
     text: "Flashcards",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,
@@ -69,7 +69,7 @@ let mainNodes = [
   {
     id: "",
     text: "Scenarios",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,
@@ -81,7 +81,7 @@ let mainNodes = [
       {
         id: "",
         text: "Our Scenarios",
-        color: "#FFFFFF",
+        color: "#000000",
         type: "copy",
         x: 0.2,
         y: 0.05,
@@ -97,7 +97,7 @@ let mainNodes = [
       {
         id: "",
         text: "Other Scenarios",
-        color: "#FFFFFF",
+        color: "#000000",
         type: "copy",
         x: -0.2,
         y: -0.1,
@@ -115,7 +115,7 @@ let mainNodes = [
   {
     id: "",
     text: "Library",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,
@@ -127,7 +127,7 @@ let mainNodes = [
       {
         id: "",
         text: "Papers",
-        color: "#FFFFFF",
+        color: "#000000",
         type: "copy",
         x: 0.2,
         y: 0.1,
@@ -142,7 +142,7 @@ let mainNodes = [
       {
         id: "",
         text: "Books",
-        color: "#FFFFFF",
+        color: "#000000",
         type: "copy",
         x: -0.2,
         y: 0.2,
@@ -157,7 +157,7 @@ let mainNodes = [
       {
         id: "",
         text: "Videos",
-        color: "#FFFFFF",
+        color: "#000000",
         type: "copy",
         x: -0.2,
         y: -0.2,
@@ -172,7 +172,7 @@ let mainNodes = [
       {
         id: "",
         text: "Links",
-        color: "#FFFFFF",
+        color: "#000000",
         type: "copy",
         x: 0.25,
         y: -0.15,
@@ -189,7 +189,7 @@ let mainNodes = [
   {
     id: "",
     text: "News",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,
@@ -201,7 +201,7 @@ let mainNodes = [
   {
     id: "",
     text: "Friends",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,
@@ -213,7 +213,7 @@ let mainNodes = [
   {
     id: "",
     text: "Methods",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,
@@ -225,7 +225,7 @@ let mainNodes = [
   {
     id: "",
     text: "Oh hi there!",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,
@@ -237,7 +237,7 @@ let mainNodes = [
       {
         id: "",
         text: "What we are working on",
-        color: "#FFFFFF",
+        color: "#000000",
         type: "copy",
         x: 0.2,
         y: 0.1,
@@ -252,7 +252,7 @@ let mainNodes = [
       {
         id: "",
         text: "Expose / One Pager",
-        color: "#FFFFFF",
+        color: "#000000",
         type: "copy",
         x: -0.2,
         y: 0.2,
@@ -267,7 +267,7 @@ let mainNodes = [
       {
         id: "",
         text: "What is Superintelligence?",
-        color: "#FFFFFF",
+        color: "#000000",
         type: "copy",
         x: -0.2,
         y: -0.2,
@@ -282,7 +282,7 @@ let mainNodes = [
       {
         id: "",
         text: "Who are we?",
-        color: "#FFFFFF",
+        color: "#000000",
         type: "copy",
         x: 0.25,
         y: -0.15,
@@ -299,7 +299,7 @@ let mainNodes = [
   {
     id: "",
     text: "Ethics",
-    color: "#FFFFFF",
+    color: "#000000",
     type: "copy",
     x: 0,
     y: 0,

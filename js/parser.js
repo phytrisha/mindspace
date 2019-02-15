@@ -149,7 +149,8 @@ function addHitbox(pos, rot, size) {
   entityEl.setAttribute("width", hitboxWidth)
 
   // ONLY FOR DEBUGGING
-  entityEl.setAttribute('opacity', '0')
+  entityEl.setAttribute('wireframe', 'true')
+  entityEl.setAttribute('opacity', '1')
 
   entityEl.addEventListener('click', moveCameraToTarget);
 
@@ -167,7 +168,7 @@ for (let i = 0; i < mainNodes.length; i++) {
   if (mainNodes[i].children) {
       for (let j = 0; j < mainNodes[i].children.length; j++) {
           mainNodes[i].children[j].id = createTextField(mainNodes[i].children[j], mainNodes[i])
-          // createLineConnectionFromOrigin(mainNodes[i].children[j], "a-scene");
+          createLineConnectionFromOrigin(mainNodes[i].children[j], '#' + mainNodes[i].id);
       }
   }
 }
