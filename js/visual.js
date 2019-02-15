@@ -19,10 +19,16 @@ function createLineConnectionFromOrigin(b, parent) {
     ELEMENT_COUNTER++
 }
 
-function addCircle(pos, parent) {
+function addCircle(pos, rot, parent) {
     // Create Element and assign ID
     let entityEl = document.createElement('a-ring')
     entityEl.id = 'elem-' + ELEMENT_COUNTER
+
+    entityEl.setAttribute("rotation", {
+        x: rot.x,
+        y: rot.y,
+        z: rot.z
+    })
 
     entityEl.setAttribute("position", {
         x: pos.x,
