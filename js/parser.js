@@ -1,6 +1,8 @@
 let ELEMENT_COUNTER = 0;
 let ELEMENTS = [];
 
+let charWidth = 0.025
+
 const context = "a-scene"
 
 function createTextField(values, parent) {
@@ -59,9 +61,6 @@ function createTextField(values, parent) {
     opacity: elOpacity
   });
 
-  // Add Click event
-  entityEl.addEventListener('click', moveCameraToTarget);
-
   // Add Element to Scene
   let contextEl = document.querySelector(context)
   contextEl.appendChild(entityEl);
@@ -75,6 +74,22 @@ function createTextField(values, parent) {
     let circleRot = { x: xRot, y: yRot, z: zRot }
     addCircle(circlePos, circleRot, context);
   }
+
+  let hitboxPos = {
+    x: xVal,
+    y: yVal,
+    z: zVal
+  }
+
+  let hitboxRot = {
+    x: xRot,
+    y: yRot,
+    z: zRot
+  }
+
+  let hitboxWidth = values.text.length
+
+  addHitbox(hitboxPos, hitboxRot, hitboxWidth)
 
   return entityEl.id
 }
@@ -107,6 +122,41 @@ function createImage(values) {
 
   // Increment, to create unique IDs
   ELEMENT_COUNTER++;
+}
+
+function addHitbox(pos, rot, size) {
+  // Create Element and assign ID
+  let entityEl = document.createElement('a-plane')
+  entityEl.id = 'elem-' + ELEMENT_COUNTER
+
+  entityEl.setAttribute("rotation", {
+    x: rot.x,
+    y: rot.y,
+    z: rot.z
+  })
+
+  entityEl.setAttribute("position", {
+    x: pos.x,
+    y: pos.y,
+    z: pos.z
+  });
+
+  let hitboxWidth = charWidth * size
+  hitboxWidth = hitboxWidth.toString()
+
+  entityEl.setAttribute('color', '#FF0000')
+  entityEl.setAttribute('height', "0.1")
+  entityEl.setAttribute("width", hitboxWidth)
+
+  // ONLY FOR DEBUGGING
+  entityEl.setAttribute('opacity', '0')
+
+  entityEl.addEventListener('click', moveCameraToTarget);
+
+  let parentEl = document.querySelector(context)
+  parentEl.appendChild(entityEl)
+
+  ELEMENT_COUNTER++
 }
 
 // Add main nodes
